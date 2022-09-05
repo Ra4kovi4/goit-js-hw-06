@@ -35,8 +35,6 @@ function createBoxes(amount) {
     heightBox += 10;
     widthBox += 10;
     ref.boxesEl.append(divBox);
-    console.log(backgroundColor);
-    console.log(divBox.style.backgroundColor);
   }
 }
 
