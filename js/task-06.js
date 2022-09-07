@@ -3,7 +3,7 @@ inputEl.addEventListener('blur', onAddClass);
 
 function onAddClass(event) {
   const textContentLength = event.currentTarget.value.length;
-  if (textContentLength < inputEl.dataset.length) {
+  if (textContentLength !== Number(inputEl.dataset.length)) {
     inputEl.classList.add('invalid');
     inputEl.classList.remove('valid');
   } else {

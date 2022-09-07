@@ -14,10 +14,11 @@ const images = [
 ];
 const pictureElGallery = document.querySelector('.gallery');
 const makeListElGallery = images
+
   .map(
     ({ url, alt }) =>
-      `<li class = 'gallery__item'><img class = "gallery__images" src =${url}, alt= ${alt} /></li>`,
+      `<li class = 'gallery__item'><img class = "gallery__images" src = "${url}" alt = "${alt}" /></li>`,
   )
-  .join(' ');
+  .join('');
 
 pictureElGallery.insertAdjacentHTML('afterbegin', makeListElGallery);
